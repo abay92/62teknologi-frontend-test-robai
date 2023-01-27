@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 const axiosBaseURL = Axios.create({
-    baseURL: 'http://62teknologi-backend-test-robai.test',
+    baseURL: process.env.REACT_APP_BASE_URL,
     headers: {
         "Content-type": "application/json"
     }
